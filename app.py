@@ -9,8 +9,22 @@ from PIL import Image
 # ✅ Fix Keras activation issue
 tf.keras.utils.get_custom_objects().clear()
 
+# ✅ Model path and Google Drive ID
+MODEL_PATH = "deepfake_model.h5"
+GOOGLE_DRIVE_FILE_ID = "1xlTb2ToE82F4wAzTAJxRIejW4lX8bMEy"  # Replace with actual file ID
+
+# ✅ Download the model if it doesn't exist
+def download_model():
+    if not os.path.exists(MODEL_PATH):
+        import gdown
+        # Construct the Google Drive URL for direct download
+        url = f"https://drive.google.com/uc?id={GOOGLE_DRIVE_FILE_ID}"
+        gdown.download(url, MODEL_PATH, quiet=False)
+
+# ✅ Ensure model is available
+download_model()
+
 # ✅ Load the trained model
-MODEL_PATH = "deepfake_model.h5"  # Ensure this file exists
 model = load_model(MODEL_PATH)
 
 # ✅ Function to compute entropy
