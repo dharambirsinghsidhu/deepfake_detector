@@ -8,9 +8,21 @@ import time
 import base64
 import requests
 
-# Page Config and Load Model
-
+# Page Config
 st.set_page_config(page_title="DeepFake Detector", page_icon="🔍", layout="wide")
+
+# Function to download model from Google Drive
+def download_model():
+    url = "https://drive.google.com/uc?id=1xlTb2ToE82F4wAzTAJxRIejW4lX8bMEy"  # Your Google Drive file ID
+    output_path = "deepfake_model.h5"
+    
+    if not os.path.exists(output_path):
+        with st.spinner("Downloading model... Please wait."):
+            gdown.download(url, output_path, quiet=False)
+        st.success("Model downloaded!")
+
+# Download and Load Model
+download_model()
 
 @st.cache_resource
 def load_model_custom():
