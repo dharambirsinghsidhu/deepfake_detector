@@ -325,7 +325,7 @@ def detector_page():
 
         image = Image.open(uploaded_file)
 
-        st.markdown("<div style='text-align: center;'><img src='data:image/png;base64,{}' style='width: 35%;'></div>".format(image_to_base64(image)), unsafe_allow_html=True)
+        st.markdown("<div style='text-align: center;'><img src='data:image/png;base64,{}' style='width: 30%;'></div>".format(image_to_base64(image)), unsafe_allow_html=True)
 
 
         label, confidence, entropy_value = predict_image(model, image)
