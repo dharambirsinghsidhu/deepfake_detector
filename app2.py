@@ -7,6 +7,7 @@ from PIL import Image
 import time
 import base64
 import requests
+import os
 
 # Page Config
 st.set_page_config(page_title="DeepFake Detector", page_icon="🔍", layout="wide")
