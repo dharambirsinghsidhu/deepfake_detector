@@ -1,6 +1,8 @@
 # A CNN and Entropy-Based Hybrid Model for Robust Deepfake Detection
 
-### **📄 Overview**
+<br>
+
+## 📄 Overview
 
 This project presents a novel hybrid deepfake detection model that integrates **Convolutional Neural Networks (CNNs)** with **entropy-based randomness analysis**. Designed to overcome the limitations of existing CNN-only models, especially against high-quality, fine-grained deepfakes, our approach significantly enhances classification reliability and reduces false positives.
 
@@ -8,9 +10,11 @@ Deepfake technology, while having legitimate uses in fields like education and e
 
 Our hybrid model addresses this by combining the robust spatial feature extraction capabilities of DenseNet-121 with the statistical regularities identified through Shannon entropy, capturing inconsistencies inherent in GAN-generated images.
 
-***
+---
 
-### **🚀 Getting Started**
+<br>
+
+## 🚀 Getting Started
 
 These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes.
@@ -22,29 +26,70 @@ Requirements for the software and other tools to build, test and push
 
 ### Installation
 
-*** 1. Clone the repository: ***
+1.  **Clone the Repository:**
+   
+    ```bash
+    git clone https://github.com/dharambirsinghsidhu/EntropyVision_Deepfake_Detector.git
+    cd EntropyVision_Deepfake_Detector
+    ```
 
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
+3.  **Create and Activate a Virtual Environment:**
 
-And repeat
+    It's highly recommended to use a virtual environment to manage project dependencies.
 
-    until finished
+    ```bash
+    python -m venv venv
+    ```
 
----
+    * **On Windows:**
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    * **On macOS/Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Install Python Dependencies:**
+
+    First, ensure your `pip` installer is up to date, then install the required Python libraries.
+
+    ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    pip install streamlit
+    ```
 
 End with an example of getting some data out of the system or using it
 for a little demo
 
-## Running the tests
+---
 
-Explain how to run the automated tests for this system
+<br>
 
-### Sample Tests
+## ▶️ Running the Application
 
-Explain what these tests test and why
+Once everything is installed, starting the app is simple:
 
-    Give an example
+1.  Go to your project's main folder in your terminal.
+2.  Type this command and press Enter:
+    ```bash
+    streamlit run app2.py --server.enableCORS false --server.enableXsrfProtection false
+    ```
+3.  A new tab will automatically open in your web browser showing the application, usually at `http://localhost:8501`.
+
+---
+
+<br>
+
+## 💡 Using the Deepfake Detector (EntropyVision)
+
+Our tool is designed for easy deepfake detection:
+
+1.  Start the Streamlit application in your browser.
+2.  **Upload any image** you want to verify.
+3.  The system will process it and show you whether it's **real or a deepfake**, complete with a **confidence level**.
+
 
 ### Style test
 
