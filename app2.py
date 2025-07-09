@@ -142,9 +142,7 @@ def style_css():
     </style>
     """, unsafe_allow_html=True)
 
-# ---------------------------
 # Page Functions
-# ---------------------------
 def home_page():
     st.markdown("""
     <div style="text-align: center; margin-top: 3rem;">
@@ -398,7 +396,7 @@ def detector_page():
 
 
 def how_it_works_page():
-    # --- Section Title Box ---
+    # Section Title Box
     st.markdown("""
         <div style="background-color: #001; border-radius: 15px; padding: 30px; margin: 20px 0; border: 1px solid #d1d5db;">
             <h2 style='color: #10b981; font-size: 2rem;'>⚙️ How It Works</h2>
@@ -406,7 +404,7 @@ def how_it_works_page():
         </div>
     """, unsafe_allow_html=True)
 
-    # --- Step 1 ---
+    # Step 1
     with st.container():
         st.markdown("""
             <div style="background-color: #001; border-radius: 12px; padding: 20px; margin: 20px 0; border: 1px solid #d1d5db;">
@@ -415,7 +413,7 @@ def how_it_works_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # --- Step 2 ---
+    #  Step 2
     with st.container():
         st.markdown("""
             <div style="background-color: #001; border-radius: 12px; padding: 20px; margin: 20px 0; border: 1px solid #d1d5db;">
@@ -424,7 +422,7 @@ def how_it_works_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # --- Step 3 ---
+    # Step 3 
     with st.container():
         st.markdown("""
             <div style="background-color: #001; border-radius: 12px; padding: 20px; margin: 20px 0; border: 1px solid #d1d5db;">
@@ -438,7 +436,7 @@ def how_it_works_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # --- Step 4 ---
+    # Step 4 
     with st.container():
         st.markdown("""
             <div style="background-color: #001; border-radius: 12px; padding: 20px; margin: 20px 0; border: 1px solid #d1d5db;">
@@ -447,7 +445,7 @@ def how_it_works_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # --- Step 5 ---
+    # Step 5 
     with st.container():
         st.markdown("""
             <div style="background-color: #001; border-radius: 12px; padding: 20px; margin: 20px 0; border: 1px solid #d1d5db;">
@@ -556,7 +554,7 @@ def about_page():
 
 
 def contact_page():
-    # --- Contact Form Box ---
+    # Contact Form Box
     st.markdown("""
         <div style="background-color: #001; border-radius: 15px; padding: 25px; margin: 20px 0; border: 1px solid #d1d5db;">
             <h3 style='color: #10b981; font-size: 2rem;'>📞 Contact Us</h3>
