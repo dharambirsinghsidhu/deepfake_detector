@@ -159,7 +159,7 @@ def home_page():
             <div style="flex: 1; min-width: 250px;">
                 <div style="color: #111; background-color: #f9f9f9; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1rem;">
                     <h4>🔍 High Accuracy</h4>
-                    <p>Our deep learning model detects manipulated images with over 98% a   ccuracy using advanced neural network architecture.</p>
+                    <p>Our deep learning model detects manipulated images with over 99% a   ccuracy using advanced neural network architecture.</p>
                 </div>
             </div>
             <div style="flex: 1; min-width: 250px;">
