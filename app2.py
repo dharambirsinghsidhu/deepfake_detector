@@ -11,7 +11,7 @@ import os
 import gdown
 
 # Page Config
-st.set_page_config(page_title="DeepFake Detector", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="EntropyVision", page_icon="🔍", layout="wide")
 
 # Function to download model from Google Drive
 def download_model():
@@ -146,7 +146,7 @@ def style_css():
 def home_page():
     st.markdown("""
     <div style="text-align: center; margin-top: 3rem;">
-        <h1 style="color:#10b981; font-size: 3rem; font-weight: 700;">DeepFake Detector</h1>
+        <h1 style="color:#10b981; font-size: 3rem; font-weight: 700;">EntropyVision</h1>
         <p style="font-size: 1.2rem; color: #e5e7eb;">Advanced AI technology to detect manipulated images with high precision</p>
     </div>
     """, unsafe_allow_html=True)
@@ -291,7 +291,7 @@ def image_to_base64(image):
 def detector_page():
     st.markdown("""
         <h2 style="color: #10b981; font-size: 2rem; font-weight: 700; text-align: center; margin-top: 2rem;">
-            DeepFake Detector 🔍
+            EntropyVision 🔍
         </h2>
         <p style="text-align: center; font-size: 1.1rem; color: #e5e7eb;">
             Upload an image to check if it's <strong>authentic</strong> or <strong>manipulated</strong>
@@ -505,14 +505,14 @@ def about_page():
     
     intro_content = """
     We are the students of <strong>VIT Bhopal University</strong> pursuing BTech in Computer Science.<br><br>
-    Welcome to <strong>DeepFake Detector</strong> — your trusted solution to identify and combat digital deception.<br>        In today's world, distinguishing between authentic and manipulated media has become increasingly difficult.<br>
+    Welcome to <strong>EntropyVision</strong> — your trusted solution to identify and combat digital deception.<br>        In today's world, distinguishing between authentic and manipulated media has become increasingly difficult.<br>
     Our mission is to provide cutting-edge technology to verify the authenticity of images online, ensuring safety from misinformation and digital manipulation.
         """
     box_section("🛡️ About Us", intro_content)
 
     # Mission Section
     mission_content = """
-    <p>As deepfake technology continues to evolve, <strong>DeepFake Detector</strong> stands as a crucial defense against the spread of misleading media.</p>
+    <p>As deepfake technology continues to evolve, <strong>EntropyVision</strong> stands as a crucial defense against the spread of misleading media.</p>
     <ul>
         <li>Detecting manipulated images with high accuracy.</li>
         <li>Promoting trust in the media that shapes public perception.</li>
@@ -548,7 +548,7 @@ def about_page():
     st.markdown("""
                 <br>
     <p style="text-align:center; font-style: italic; color: #e5e7eb;">
-        At <strong>DeepFake Detector</strong>, we're dedicated to advancing AI technology for a safer and more trustworthy digital world.
+        At <strong>EntropyVision</strong>, we're dedicated to advancing AI technology for a safer and more trustworthy digital world.
     </p>
     """ , unsafe_allow_html=True)
 
@@ -641,8 +641,8 @@ def custom_footer():
     st.markdown("""<hr style="margin-top: 3rem; margin-bottom: 1rem;">""", unsafe_allow_html=True)
     st.markdown("""
         <div style="text-align: center; font-size: 0.9rem; color: #6B7280;">
-            Made with ❤️ by <strong>Team DeepFake Detector</strong> | VIT Bhopal University  
-            <br>© 2025 DeepFake Detector. All rights reserved.
+            Made with ❤️ by <strong>Team EntropyVision</strong> | VIT Bhopal University  
+            <br>© 2025 EntropyVision. All rights reserved.
         </div>
     """, unsafe_allow_html=True)
 
