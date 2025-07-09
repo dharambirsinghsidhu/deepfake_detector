@@ -13,27 +13,25 @@ Our hybrid model addresses this by combining the robust spatial feature extracti
 ### **🚀 Getting Started**
 
 These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+your local machine for development and testing purposes.
 
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+- Python 3.8+ (preferably 3.11)
 
-### Installing
+### Installation
 
-A step by step series of examples that tell you how to get a development
-environment running
+*** 1. Clone the repository: ***
 
-Say what the step will be
-
-    Give the example
+    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+    cd YOUR_REPO_NAME
 
 And repeat
 
     until finished
+
+---
 
 End with an example of getting some data out of the system or using it
 for a little demo
