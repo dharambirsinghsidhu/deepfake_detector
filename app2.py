@@ -204,19 +204,19 @@ def home_page():
     """, unsafe_allow_html=True)
 
     # Box: Testimonials
-    st.markdown("""
-    <div style="background-color: #001; padding: 2rem; margin: 2rem 0; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07); border: 2px solid white;">
-        <h2 style="color:#10b981; font-size: 2rem; font-weight: 600;">💬 What Users Say</h2>
-        <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1rem;">
-            <p style="font-style: italic; color: #111;">"This tool has been invaluable for our journalism team in verifying image authenticity before publication. The speed and accuracy are impressive."</p>
-            <p style="color: #111;"><strong>Sarah Johnson</strong><br><span style="font-size: 0.9rem; color: #666;">Digital Media Editor</span></p>
-        </div>
-        <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 1rem;">
-            <p style="font-style: italic; color: #111;">"As a photography enthusiast, I'm amazed at how well this detector identifies manipulated images. The detailed analysis helps me understand the results clearly."</p>
-            <p style="color: #111;"><strong>Michael Chang</strong><br><span style="font-size: 0.9rem; color: #666;">Photographer</span></p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    # <div style="background-color: #001; padding: 2rem; margin: 2rem 0; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07); border: 2px solid white;">
+    #     <h2 style="color:#10b981; font-size: 2rem; font-weight: 600;">💬 What Users Say</h2>
+    #     <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1rem;">
+    #         <p style="font-style: italic; color: #111;">"This tool has been invaluable for our journalism team in verifying image authenticity before publication. The speed and accuracy are impressive."</p>
+    #         <p style="color: #111;"><strong>Sarah Johnson</strong><br><span style="font-size: 0.9rem; color: #666;">Digital Media Editor</span></p>
+    #     </div>
+    #     <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 1rem;">
+    #         <p style="font-style: italic; color: #111;">"As a photography enthusiast, I'm amazed at how well this detector identifies manipulated images. The detailed analysis helps me understand the results clearly."</p>
+    #         <p style="color: #111;"><strong>Michael Chang</strong><br><span style="font-size: 0.9rem; color: #666;">Photographer</span></p>
+    #     </div>
+    # </div>
+    # """, unsafe_allow_html=True)
 
     # Box: CTA
     def cta_box():
