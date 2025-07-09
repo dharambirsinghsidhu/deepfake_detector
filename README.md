@@ -90,12 +90,25 @@ Our tool is designed for easy deepfake detection:
 2.  **Upload any image** you want to verify.
 3.  The system will process it and show you whether it's **real or a deepfake**, complete with a **confidence level**.
 
+---
 
-### Style test
+<br>
 
-Checks if the best practices and the right coding style has been used.
+## 📂 Project Structure
 
-    Give an example
+All core files for this project are located in the root directory:
+
+   ```bash
+   ├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
+   ├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
+   ├── app.py                   # Web interface (HTML/CSS) for a potential alternative or supplementary application.
+   ├── app2.py                  # **Streamlit Application:** The main script for our interactive deepfake detection web interface.
+   └── requirements.txt         # Lists all Python dependencies required to run the project.
+   ```
+
+---
+
+<br>
 
 ## Deployment
 
