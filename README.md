@@ -84,18 +84,17 @@ You can access the dataset used for this project on Kaggle here:
 
 <br>
 
----
-
 ## ⚙️ System Architecture & Logic Flow
 
 To better understand how our hybrid deepfake detection model operates, the following diagram illustrate its overall system architecture and the flow of logic from image input to prediction.
 
+<br>
+
 <div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
     <div style="text-align: center; margin: 10px;">
-        <img src="./images/system_architecture_flow.png" alt="System Architecture Diagram" style="max-width: 100%; height: auto; width: 600px;">
-        <p><em>Figure 3: Overall System Architecture and Data Flow</em></p>
+        <img src="./images/system_architecture_flow.png" alt="System Architecture Diagram" style="max-width: 100%; height: auto; width: 600px; display: block; margin: 0 auto;">
     </div>
-    </div>
+</div>
 
 ---
 
@@ -129,7 +128,8 @@ All core files for this project are located in the root directory:
 │   ├── app2_prediction_details.png
 │   ├── app_image_prediction.png
 │   ├── app_interface.png
-│   └── app_prediction_details.png
+│   ├── app_prediction_details.png
+│   └── system_architecture_flow.png
 ├── static/                  # Static assets for the Flask web application (app.py).
 │   ├── deepfake_hero.jpeg
 │   ├── logo.png
