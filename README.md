@@ -2,6 +2,10 @@
 
 <br>
 
+**[Live Demo of the App Here!](https://entropyvision-ai.streamlit.app/)**
+
+<br>
+
 ## 📄 Overview
 
 This project presents a novel hybrid deepfake detection model that integrates **Convolutional Neural Networks (CNNs)** with **entropy-based randomness analysis**. Designed to overcome the limitations of existing CNN-only models, especially against high-quality, fine-grained deepfakes, our approach significantly enhances classification reliability and reduces false positives.
@@ -34,16 +38,24 @@ Here are some visuals showcasing the application's interface and capabilities:
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
   <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-    <img src="./images/app_interface.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-    <p>Upload Image</p>
+    <br>
+    <p><b>Streamlit App Interface</b></p>
+    <br>
+    <img src="./images/app2_interface.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
+  <hr style="border: none; background-color: #ccc; height: 0.1px; margin: 20px 0;">
   <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-    <img src="./images/image_prediction.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-    <p>View Prediction</p>
+    <br>
+    <p><b>Upload Image</b></p>
+    <br>
+    <img src="./images/app2_image_prediction.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
+  <hr style="border: none; background-color: #ccc; height: 0.1px; margin: 20px 0;">
   <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-    <img src="./images/prediction_details.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-    <p>View Prediction</p>
+    <br>
+    <p><b>Prediction Details</b></p>
+    <br>
+    <img src="./images/app2_prediction_details.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
 </div>
 
