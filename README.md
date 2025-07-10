@@ -64,6 +64,26 @@ Here are some visuals showcasing the application's interface and capabilities:
 
 <br>
 
+## 📊 Dataset
+
+The model was trained and evaluated on a comprehensive dataset consisting of **140,000 high-resolution images**, meticulously divided into:
+* **100,000 Training Images** (50,000 real, 50,000 fake)
+* **20,000 Validation Images** (10,000 real, 10,000 fake)
+* **20,000 Testing Images** (10,000 real, 10,000 fake)
+
+The images are sourced as follows:
+* **Real Images:** Acquired from the Flickr-Faces-HQ (FFHQ) dataset.
+* **Fake Images:** Generated using the state-of-the-art StyleGAN model.
+
+<br>
+
+You can access the dataset used for this project on Kaggle here:
+**[Deepfake Image Detection Dataset](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)**
+
+---
+
+<br>
+
 ## 💻 Technologies Used
 
 This project leverages a focused set of key technologies:
