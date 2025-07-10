@@ -38,7 +38,11 @@ Here are some visuals showcasing the application's interface and capabilities:
     <p>Upload Image</p>
   </div>
   <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
-    <img src="./images/app_interface.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="./images/image_prediction.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>View Prediction</p>
+  </div>
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <img src="./images/prediction_details.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
     <p>View Prediction</p>
   </div>
 </div>
