@@ -2,7 +2,7 @@
 
 <br>
 
-**[Live Demo of the App Here!](https://entropyvision-ai.streamlit.app/)**
+**Live Demo:  [Click Here for Live Demo](https://entropyvision-ai.streamlit.app/)**
 
 <br>
 
