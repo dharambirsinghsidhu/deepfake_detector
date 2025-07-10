@@ -84,6 +84,23 @@ You can access the dataset used for this project on Kaggle here:
 
 <br>
 
+---
+
+## ⚙️ System Architecture & Logic Flow
+
+To better understand how our hybrid deepfake detection model operates, the following diagram illustrate its overall system architecture and the flow of logic from image input to prediction.
+
+<div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+    <div style="text-align: center; margin: 10px;">
+        <img src="./images/system_architecture_flow.png" alt="System Architecture Diagram" style="max-width: 100%; height: auto; width: 600px;">
+        <p><em>Figure 3: Overall System Architecture and Data Flow</em></p>
+    </div>
+    </div>
+
+---
+
+<br>
+
 ## 💻 Technologies Used
 
 This project leverages a focused set of key technologies:
@@ -123,6 +140,7 @@ All core files for this project are located in the root directory:
 │   ├── index.html
 │   └── result.html
 ├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
+├── LICENSE                  # Specifies the legal terms under which the project can be used and distributed.
 ├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
 ├── app.py                   # Flask Web Application: The backend logic for the HTML/CSS web interface.
 ├── app2.py                  # Streamlit Application: The main script for our interactive deepfake detection web interface.
