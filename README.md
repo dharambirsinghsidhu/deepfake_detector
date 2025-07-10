@@ -90,9 +90,11 @@ To better understand how our hybrid deepfake detection model operates, the follo
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 10px;">
-        <img src="./images/system_architecture_flow.png" alt="System Architecture Diagram" style="max-width: 100%; height: auto; width: 600px; display: block; margin: 0 auto;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+    <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+        <div align="center">
+          <img src="./images/system_architecture_flow.png" alt="System Architecture Diagram" width="600"/>
+        </div>    
     </div>
 </div>
 
