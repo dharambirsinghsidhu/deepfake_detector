@@ -224,7 +224,7 @@ In addition to the Streamlit application, this project also includes an alternat
 
 <br>
 
-## How to Run the HTML/CSS Interface
+## 💡 How to Run the HTML/CSS Interface
 
 1.  **Ensure you have activated your virtual environment** (as described in "Local Setup and Installation").
    
@@ -249,7 +249,7 @@ In addition to the Streamlit application, this project also includes an alternat
 
 <br>
 
-### Visual Demonstration ('app.py')
+### 📸 Visual Demonstration ('app.py')
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
   <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
