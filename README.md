@@ -31,7 +31,7 @@ Our hybrid model addresses this by combining the robust spatial feature extracti
 
 <br>
 
-### Visual Demonstration
+## 🖼️ Visual Demonstration ('app2.py')
 
 Here are some visuals showcasing the application's interface and capabilities:
 
@@ -210,6 +210,69 @@ Please make sure your code adheres to good practices and includes relevant tests
 For any questions or collaborations, feel free to reach out to the project maintainer:
 
 * **Dharambir Singh Sidhu:** dharambirsinghsidhu.work@gmail.com
+
+<br>
+
+---
+---
+
+<br>
+
+## 📚 Appendix: Alternative Web Interface (`app.py`)
+
+In addition to the Streamlit application, this project also includes an alternative web interface built with HTML/CSS and potentially powered by Flask (`app.py`). This interface offers a different approach to interacting with the deepfake detection model, showcasing flexibility in deployment options.
+
+<br>
+
+## How to Run the HTML/CSS Interface
+
+1.  **Ensure you have activated your virtual environment** (as described in "Local Setup and Installation").
+   
+2.  **Navigate to your project's root directory** in the terminal.
+   
+3.  **Install Python Dependencies:**
+
+    First, ensure your `pip` installer is up to date, then install the required Python libraries.
+
+    ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
+    
+4.  **Run the Flask application:**
+    ```bash
+    python app.py
+    ```
+7.  The application should then be accessible in your web browser, typically at `http://127.0.0.1:5000/` or a similar local address indicated in your terminal.
+
+---
+
+<br>
+
+### Visual Demonstration ('app.py')
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <br>
+    <p><b>Web App Interface</b></p>
+    <br>
+    <img src="./images/app_interface.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  </div>
+  <hr style="border: none; background-color: #ccc; height: 0.1px; margin: 20px 0;">
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <br>
+    <p><b>Upload Image</b></p>
+    <br>
+    <img src="./images/app_image_prediction.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  </div>
+  <hr style="border: none; background-color: #ccc; height: 0.1px; margin: 20px 0;">
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <br>
+    <p><b>Prediction Details</b></p>
+    <br>
+    <img src="./images/app_prediction_details.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  </div>
+</div>
 
 ---
 
