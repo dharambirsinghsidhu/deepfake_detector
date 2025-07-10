@@ -81,6 +81,38 @@ This project leverages a focused set of key technologies:
 
 <br>
 
+## 📂 Project Structure
+
+All core files for this project are located in the root directory:
+
+   ```bash
+├── images/                  # Contains screenshots and visual assets used in this README.
+│   ├── app2_image_prediction.png
+│   ├── app2_interface.png
+│   ├── app2_prediction_details.png
+│   ├── app_image_prediction.png
+│   ├── app_interface.png
+│   └── app_prediction_details.png
+├── static/                  # Static assets for the Flask web application (app.py).
+│   ├── deepfake_hero.jpeg
+│   ├── logo.png
+│   ├── style.css
+│   ├── style1.css
+│   └── team.jpg
+├── templates/               # HTML template files for the Flask web application (app.py).
+│   ├── index.html
+│   └── result.html
+├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
+├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
+├── app.py                   # Flask Web Application: The backend logic for the HTML/CSS web interface.
+├── app2.py                  # Streamlit Application: The main script for our interactive deepfake detection web interface.
+└── requirements.txt         # Lists all Python dependencies required to run the project.
+  ```
+
+---
+
+<br>
+
 ## 🚀 Getting Started
 
 These instructions will give you a copy of the project up and running on
@@ -168,38 +200,6 @@ Our tool is designed for easy deepfake detection:
 1.  Start the Streamlit application in your browser.
 2.  **Upload any image** you want to verify.
 3.  The system will process it and show you whether it's **real or a deepfake**, complete with a **confidence level**.
-
----
-
-<br>
-
-## 📂 Project Structure
-
-All core files for this project are located in the root directory:
-
-   ```bash
-├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
-├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
-├── app.py                   # Flask Web Application: The backend logic for the HTML/CSS web interface.
-├── app2.py                  # Streamlit Application: The main script for our interactive deepfake detection web interface.
-├── requirements.txt         # Lists all Python dependencies required to run the project.
-├── images/                  # Contains screenshots and visual assets used in this README.
-│   ├── app2_image_prediction.png
-│   ├── app2_interface.png
-│   ├── app2_prediction_details.png
-│   ├── app_image_prediction.png
-│   ├── app_interface.png
-│   └── app_prediction_details.png
-├── static/                  # Static assets for the Flask web application (app.py).
-│   ├── deepfake_hero.jpeg
-│   ├── logo.png
-│   ├── style.css
-│   ├── style1.css
-│   └── team.jpg
-└── templates/               # HTML template files for the Flask web application (app.py).
-├── index.html
-└── result.html
-   ```
 
 ---
 
