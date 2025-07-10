@@ -1,0 +1,596 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E073F; /* Dark theme */
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 85vh; /* Reduced height slightly to move it up */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the section */
+    text-align: left;
+    background: url('/static/ai-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    padding: 0 10%; /* Adds space on both sides */
+    gap: 8%; /* Increased gap between text and image */
+    margin-top: -30px; /* Moves the section up */
+}
+
+/* Hero Content (Left Side) */
+.hero-content {
+    max-width: 45%;
+    z-index: 2;
+}
+
+/* Headline */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Description */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 550px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    margin-top: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #AD49E1;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+    transform: scale(1.05);
+    color: #2E073F;
+}
+
+/* Contact Button */
+.contact-btn {
+    background: #fff;
+    color: #2E073F;
+}
+
+.contact-btn:hover {
+    background: #AD49E1;
+    color: #fff;
+}
+
+/* Hero Image (Right Side) */
+.hero-image {
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* Centers the image */
+    width: 60%; /* Makes it responsive */
+    max-width: 350px; /* Adjust this to your preferred size */
+    margin-top: 60px;
+}
+
+.hero-image img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* How It Works */
+.how-it-works {
+    padding: 80px 5%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    color: #fff; /* Updated color for better visibility */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Steps Container */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Step Box */
+.step {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.step:hover {
+    border-color: #2E073F;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+    transform: scale(1.05);
+}
+
+/* Step Title */
+.step h3 {
+    font-size: 1.4rem;
+    color: #2E073F;
+    margin-bottom: 10px;
+}
+
+/* Step Description */
+.step p {
+    font-size: 1rem;
+    color: #2E073F;
+    line-height: 1.5;
+}
+
+/* Upload Section */
+.upload-section {
+    padding: 60px 5%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.upload-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Upload Box with Drag & Drop */
+.upload-box {
+    border: 2px dashed #AD49E1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    background: #331e3b;
+    transition: 0.3s ease-in-out;
+}
+
+/* Change border color when dragging file */
+.upload-box.drag-over {
+    border-color: #7A1CAC;
+    background: rgba(165, 56, 248, 0.1);
+}
+
+/* Hidden file input */
+.upload-box input {
+    display: none;
+}
+
+/* Upload Label (Browse Button) */
+.upload-box label {
+    display: inline-block;
+    background: #AD49E1;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.upload-box label:hover {
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+    transform: scale(1.05);
+    color: #2E073F;
+}
+
+/* Detect Button */
+.upload-button {
+    background: #AD49E1;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.upload-button:hover {
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+    transform: scale(1.05);
+    color: #2E073F;
+}
+
+
+/* Features Section */
+.features {
+    padding: 60px 5%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Feature List */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Individual Feature Box */
+.feature {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+/* Feature Icon */
+.feature span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Feature Heading */
+.feature h3 {
+    color: #2E073F;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Feature Description */
+.feature p {
+    color: #2E073F;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.feature:hover {
+    border-color: #2E073F;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+    transform: scale(1.05);
+}
+
+
+/* About */
+/* About Us Section */
+.about {
+    padding: 80px 5%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.5);
+}
+
+/* Contact Us Section */
+/* Contact Section */
+.contact {
+    padding: 80px 5%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* Contact Box */
+.contact-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #AD49E1;
+    box-shadow: 0px 5px 15px rgba(235, 211, 248, 0.2);
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 24px); /* Adjusted width to stay inside the box */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #AD49E1;
+    border-radius: 6px;
+    background: #331e3b;
+    color: #fff;
+    font-size: 1rem;
+    max-width: 90%; /* Ensuring it doesn’t exceed the box */
+    box-sizing: border-box;
+}
+
+.contactusp{
+    margin-bottom: 50px;
+}
+
+/* Prevent textarea overflow */
+.contact-form textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+/* Contact Button */
+.cta-button {
+    background: #AD49E1;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 65px; /* Ensures it stays at the bottom */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: #AD49E1;
+}
+
+
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 5%;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #AD49E1;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #AD49E1;
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Logo and Site Name Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+    margin-left: 30px;
+    border-radius: 8%;
+}
+
+/* Site Name Styling */
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Branding Color */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contact-btn {
+    background: #fff;
+    color: #2E073F;
+}
+
+.about-image img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 290px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 800px; /* Limits height to make it shorter */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecting Deception</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="nav">
+        <nav>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Website Logo" class="logo">
+                <div class="site-name">Detecting Deception</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#nav">Home</a></li>
+                <li><a href="#upload">Detect</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Detect DeepFakes with AI-Powered Accuracy</h1>
+        <p>Upload an image to check whether it is real or fake <br>with cutting-edge AI technology.</p>
+        <div class="cta-buttons">
+            <a href="#upload" class="cta-button">Try Now</a>
+            <a href="#contact" class="cta-button contact-btn">Contact Us</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='deepfake_hero.jpeg') }}" alt="AI DeepFake Detection">
+    </div>
+</section>
+
+
+    <!-- How It Works -->
+<section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>1️⃣ Upload an Image 📤</h3>
+            <p>Choose an image and upload it for analysis.</p>
+        </div>
+        <div class="step">
+            <h3>2️⃣ AI Analyzes It 🤖</h3>
+            <p>Our deep learning model processes the image.</p>
+        </div>
+        <div class="step">
+            <h3>3️⃣ Get Instant Results ⚡</h3>
+            <p>Receive an instant report on whether the image is real or fake.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Upload Section -->
+<section id="upload" class="upload-section">
+    <h2>Upload an Image to Check if it's Real or Fake</h2>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="upload-box" id="uploadBox">
+            <p>Drag & Drop an image here or</p>
+            <label for="fileUpload">Browse</label>
+            <input type="file" id="fileUpload" name="file" accept="image/*" required>
+        </div>
+
+        <!-- Image Preview + File Name -->
+        <div id="previewContainer" style="display: none; text-align: center; margin-top: 15px;">
+            <img id="previewImage" style="max-width: 150px; max-height: 112px; border-radius: 10px; display: block; margin: auto;">
+            <p id="fileNameDisplay" style="color: #EBD3F8; margin-top: 5px; font-weight: bold;"></p>
+        </div>
+
+        <br>
+        <button type="submit" class="upload-button">Detect DeepFake</button>
+    </form>
+</section>
+
+<!-- JavaScript for Drag & Drop + File Preview -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const uploadBox = document.getElementById("uploadBox");
+    const fileInput = document.getElementById("fileUpload");
+    const fileNameDisplay = document.getElementById("fileNameDisplay");
+    const previewImage = document.getElementById("previewImage");
+    const previewContainer = document.getElementById("previewContainer");
+
+    // ❌ Prevent browser from opening file when dropped anywhere on the page
+    document.addEventListener("dragover", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    document.addEventListener("drop", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    // Handle drag over upload box
+    uploadBox.addEventListener("dragover", function(e) {
+        e.preventDefault();
+        uploadBox.classList.add("drag-over");
+    });
+
+    uploadBox.addEventListener("dragleave", function(e) {
+        e.preventDefault();
+        uploadBox.classList.remove("drag-over");
+    });
+
+    // Handle file drop inside upload box
+    uploadBox.addEventListener("drop", function(e) {
+        e.preventDefault();
+        uploadBox.classList.remove("drag-over");
+
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+            fileInput.files = files; // Set files in input field
+            handleFileUpload(files[0]); // Preview the file
+        }
+    });
+
+    fileInput.addEventListener("change", function() {
+        if (fileInput.files.length > 0) {
+            handleFileUpload(fileInput.files[0]);
+        }
+    });
+
+    function handleFileUpload(file) {
+        fileNameDisplay.textContent = `Selected File: ${file.name}`;
+        previewContainer.style.display = "block"; 
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            previewImage.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+
+</script>
+
+
+    <!-- Features Section -->
+<!-- Features Section -->
+<section id="features" class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+        <div class="feature">
+            <span>🔍</span>
+            <h3>High Accuracy Detection</h3>
+            <p>Our AI ensures precise and reliable deepfake detection.</p>
+        </div>
+        <div class="feature">
+            <span>⚡</span>
+            <h3>Fast & Reliable</h3>
+            <p>Get instant results with cutting-edge machine learning models.</p>
+        </div>
+        <div class="feature">
+            <span>🛡️</span>
+            <h3>Secure & Private</h3>
+            <p>Your images are processed securely with end-to-end encryption.</p>
+        </div>
+        <div class="feature">
+            <span>🤖</span>
+            <h3>AI-Powered Technology</h3>
+            <p>Leveraging deep learning to provide accurate deepfake analysis.</p>
+        </div>
+        <div class="feature">
+            <span>📈</span>
+            <h3>Continuous Improvement</h3>
+            <p>Our models are regularly updated for better accuracy.</p>
+        </div>
+        <div class="feature">
+            <span>🌍</span>
+            <h3>Global Accessibility</h3>
+            <p>Available worldwide with a user-friendly interface.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Us Section -->
+    <!-- About Us Section -->
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>We are third-year Computer Science students pursuing B.Tech at VIT Bhopal University. With a strong foundation in Machine Learning, Deep Learning, and Artificial Intelligence, we have applied our knowledge to develop an advanced deepfake detection solution under the supervision of Dr Sultan Alam Sir.</p>
+            <p>Observing the increasing misuse of deepfake technology and its adverse effects on society, we took the initiative to create a reliable tool that can help combat digital misinformation and promote authenticity in online media.</p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='team.jpg') }}" alt="AI Deepfake Detection Team">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <!-- Contact Info Box -->
+        <div class="contact-box">
+            <h2>☎️ Contact Us</h2>
+            <p class="contactusp">Have questions? Let’s connect!</p>
+            <div class="contact-details">
+                <p>📧 Email: dharambirsinghsidhu.work@email.com</p>
+                <p>📞 Phone: +91 9877370522</p>
+                <p>🏠 Address: VIT Bhopal University, Bhoapl</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dharambir-singh-sidhu-0a2738250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dharambirsinghsidhu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/sidhu_bir04/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-box">
+            <h3>✉️ Send Us a Message</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Detecting Deception</h2>
+            <p>AI-driven deepfake detection to ensure authenticity and security.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#nav">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <a href="#upload">Detect</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/dharambir-singh-sidhu-0a2738250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dharambirsinghsidhu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/sidhu_bir04/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Detecting Deception. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

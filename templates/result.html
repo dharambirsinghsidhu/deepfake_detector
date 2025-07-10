@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+    <!-- <link rel="stylesheet" href="/static/style1.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Website Logo" class="logo">
+                <div class="site-name">Detecting Deception</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5000/#nav">Home</a></li>
+                <li><a href="/#results">Results</a></li>
+                <li><a href="http://127.0.0.1:5000/#upload">Detect</a></li>
+                <li><a href="http://127.0.0.1:5000/#about">About Us</a></li>
+                <li><a href="http://127.0.0.1:5000/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="result-container container" id="results">
+        <h1 class="title">Deepfake Detection Result</h1>
+
+        <div class="result-box">
+            <p class="result-label">Prediction: <span class="result-value">{{ label }}</span></p>
+            <p class="confidence-label">Confidence: <span class="confidence-value">{{ confidence }}</span></p>
+        </div>
+
+        <a href="/#upload" class="btn">🔄 Try Another Image</a>
+    </div>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Detecting Deception</h2>
+            <p>AI-driven deepfake detection to ensure authenticity and security.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="http://127.0.0.1:5000/#nav">Home</a>
+            <a href="#results">Results</a>
+            <a href="http://127.0.0.1:5000/#upload">Detect</a>
+            <a href="http://127.0.0.1:5000/#about">About Us</a>
+            <a href="http://127.0.0.1:5000/#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/dharambir-singh-sidhu-0a2738250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dharambirsinghsidhu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/sidhu_bir04/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Detecting Deception. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
