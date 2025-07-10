@@ -178,11 +178,27 @@ Our tool is designed for easy deepfake detection:
 All core files for this project are located in the root directory:
 
    ```bash
-   ├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
-   ├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
-   ├── app.py                   # Web interface (HTML/CSS) for a potential alternative or supplementary application.
-   ├── app2.py                  # **Streamlit Application:** The main script for our interactive deepfake detection web interface.
-   └── requirements.txt         # Lists all Python dependencies required to run the project.
+├── Hybrid model.ipynb       # Jupyter Notebook containing the complete model training, evaluation, and experimentation.
+├── README.md                # This README file, providing a comprehensive overview and setup instructions for the project.
+├── app.py                   # Flask Web Application: The backend logic for the HTML/CSS web interface.
+├── app2.py                  # Streamlit Application: The main script for our interactive deepfake detection web interface.
+├── requirements.txt         # Lists all Python dependencies required to run the project.
+├── images/                  # Contains screenshots and visual assets used in this README.
+│   ├── app2_image_prediction.png
+│   ├── app2_interface.png
+│   ├── app2_prediction_details.png
+│   ├── app_image_prediction.png
+│   ├── app_interface.png
+│   └── app_prediction_details.png
+├── static/                  # Static assets for the Flask web application (app.py).
+│   ├── deepfake_hero.jpeg
+│   ├── logo.png
+│   ├── style.css
+│   ├── style1.css
+│   └── team.jpg
+└── templates/               # HTML template files for the Flask web application (app.py).
+├── index.html
+└── result.html
    ```
 
 ---
