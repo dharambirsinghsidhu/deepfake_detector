@@ -31,13 +31,18 @@ Our hybrid model addresses this by combining the robust spatial feature extracti
 
 Here are some visuals showcasing the application's interface and capabilities:
 
-![Streamlit App Interface](./images/app_interface.png "Main application screenshot")
-*Figure 1: The main user interface of the Streamlit deepfake detection application.*
 
-<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <img src="./images/app_interface.png" alt="Upload Interface" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>Upload Image</p>
+  </div>
+  <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+    <img src="./images/app_interface.png" alt="Prediction Result" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>View Prediction</p>
+  </div>
+</div>
 
-![Prediction in Action](./images/prediction_gif.gif "Demonstration of image upload and prediction")
-*Figure 2: A quick demonstration of uploading an image and receiving a real/deepfake prediction.*
 
 ---
 
