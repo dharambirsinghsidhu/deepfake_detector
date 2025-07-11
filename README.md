@@ -337,9 +337,9 @@ In addition to the Streamlit application, this project also includes an alternat
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
     <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
         <div align="center">
-          <div>© 2025 Dharambir Singh Sidhu. All rights reserved.</div>
+              <div>© 2025 Dharambir Singh Sidhu. Licensed under the <a href="./LICENSE">MIT License</a>.</div>
           <br>
-          <a href="#top">⬆️ Back to Top</a>
+          🔹<a href="#top"> Back to Top </a>🔹
         </div>    
     </div>
 </div>
