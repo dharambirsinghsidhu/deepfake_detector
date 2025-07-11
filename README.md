@@ -214,6 +214,10 @@ Due to the substantial size of our pre-trained deepfake detection model, it is n
 
 When you run `app2.py`, it will check for the presence of the model file (e.g., in a `models/` directory). If it's missing, a download process will be initiated, typically displaying progress in your terminal. Please ensure you have an active internet connection during the first run. The model will be saved to a designated folder (e.g., `models/` or `weights/`) within your project directory for future use.
 
+<br>
+
+**Download Trained Model:  [Click Here to Download Pre-Trained Model](https://drive.google.com/file/d/1xlTb2ToE82F4wAzTAJxRIejW4lX8bMEy/view?usp=drive_link)** <div id="top"></div>
+
 ---
 
 <br>
