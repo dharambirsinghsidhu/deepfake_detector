@@ -2,7 +2,7 @@
 
 <br>
 
-**Live Demo:  [Click Here for Live Demo](https://entropyvision-ai.streamlit.app/)**
+**Live Demo:  [Click Here for Live Demo](https://entropyvision-ai.streamlit.app/)** <div id="top"></div>
 
 <br>
 
@@ -333,3 +333,17 @@ In addition to the Streamlit application, this project also includes an alternat
 ---
 
 <br>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+    <div style="flex: 1 1 300px; max-width: 48%; text-align: center; border: 1px solid #eee; padding: 5px;">
+        <div align="center">
+          <div>© 2025 Dharambir Singh Sidhu. All rights reserved.</div>
+          <br>
+          <a href="#top">⬆️ Back to Top</a>
+        </div>    
+    </div>
+</div>
+
+<br>
+
+---
