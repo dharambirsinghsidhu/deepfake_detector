@@ -1,4 +1,4 @@
-# A CNN and Entropy-Based Hybrid Model for Robust Deepfake Detection
+# EntropyVision: A CNN and Entropy-Based Hybrid Model for Robust Deepfake Detection
 
 <br>
 
